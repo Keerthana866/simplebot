@@ -8,7 +8,7 @@ ammu =clinet(
 )
 
 #commed creation 
-@ammu.on_message(filters.commend("start") && filters.group )
+@ammu.on_message(filters.commend("start") & filters.group )
 async def start(client,message):
     await message.replay_text("hey i am alive ")
 
